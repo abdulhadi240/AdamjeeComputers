@@ -5,6 +5,7 @@ import {motion} from 'framer-motion'
 import Image from 'next/image'
 import Images from './Images'
 
+
 const Slider = () => {
 
   const [width , setWidth] = useState(0);
@@ -15,8 +16,15 @@ const Slider = () => {
     setWidth(1200)
   },[])
   return (
+    <>
     <div>
-    <motion.div ref={coronal} className='cursor-grab overflow-hidden  select-none  w-80 ml-12 sm:w-[600px] lg:w-[900px]'>
+      <div className='mt-20'>
+        <div>
+          <h1 className='underline text-2xl font-bold flex justify-center mb-10'>OUR GALLERY</h1>
+        </div>
+      </div>
+
+    <motion.div ref={coronal} className='cursor-grab overflow-hidden  select-none  w-80 lg:ml-12 sm:w-[600px] lg:w-[900px] xl:w-[1250px]'>
         <motion.div drag='x' dragConstraints={{right:0 , left:-width}} className='flex '>
             {Images.map((images)=>{
               return(
@@ -28,6 +36,7 @@ const Slider = () => {
         </motion.div>
     </motion.div>
     </div>
+    </>
   )
 }
 

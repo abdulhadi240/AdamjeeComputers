@@ -11,7 +11,7 @@ export default function Home() {
       <MainInfo />
       <Service/>
       <Products />
-
+      <Slider/>
       {/* <Lab />
 
       <Slider /> */}
