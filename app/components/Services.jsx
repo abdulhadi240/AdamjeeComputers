@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Services = ({src , text , heading}) => {
   return (
-    <div className='bg-gray-100 w-72 h-auto ml-32'>
+    <div className=' w-72 h-auto '>
         <div className='flex justify-center'>
             <Image src={src} height={50} width={50} alt='service'/>
         </div>
