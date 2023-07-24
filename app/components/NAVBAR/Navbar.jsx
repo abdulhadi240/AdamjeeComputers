@@ -3,9 +3,9 @@ import MobileMenu from "./MobileMenu";
 import Name from "./Name";
 const Navbar = () => {
   return (
-    <div className="w-full h-10 lg:flex lg:justify-between hidden px-10 pt-4 pb-14 absolute top-0 bg-white">
+    <div className="w-full h-auto flex justify-between  lg:px-10 pt-4  bg-white">
         <div className="mt-2">LOGO</div>
-        <div className="flex gap-4 text-black ">
+        <div className=" lg:gap-4 text-black hidden lg:flex">
             <Name text={'Home'}/>
             <Name text={'Contracts'}/> 
             <Name text={'About us'}/> 

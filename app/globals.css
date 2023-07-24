@@ -6,3 +6,59 @@ html {
     
     scroll-behavior: smooth;
   }
+
+
+  .hero {
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    color:#000
+}
+
+.content {
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    color: black;
+    flex: 1;
+}
+
+
+
+
+.watch-wrapper {
+    flex: 0 0 35%
+}
+
+
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+.layer {
+    background-color: #000;
+}
+
+.layer-1 {
+    flex: 1;
+}
+
+.layer-2 {
+    flex: 1;
+}
+
+.layer-3 {
+    flex: 1;
+}

@@ -4,15 +4,19 @@ import Lab from './components/Lab'
 import Slider from './components/ImageSlider/Slider'
 import Products from './components/Products'
 import Service from './components/Service'
+import Navbar from './components/NAVBAR/Navbar'
 
 export default function Home() {
   return (
-    <div className='mt-16'>
+    <div className=''>
+      <Navbar />
+      <div className=''>
       <MainInfo />
-      <Service/>
+      </div>
+      <Service />
       {/* <Lab/> */}
       <Products />
-      <Slider/>
+      <Slider />
     </div>
   )
 }

@@ -5,7 +5,7 @@ const Products = () => {
         <div className='w-full h-auto bg-black '>
             <div className='flex justify-center text-3xl pt-10 font-bold text-white'>CATEGORY</div>
             <div className='flex justify-center text-sm mt-1 text-center text-white'>WE have products in these categories !</div>
-            <div className='flex justify-center mt-20 p-10 mb-10'>
+            <div className='flex justify-center mt-10 p-10 mb-10'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20'>
                 <ProductCard src={'/work.jpg'} text={'Work Station'} />
                     <ProductCard src={'/gaming.jpg'} text={'Custom Built'} />

@@ -1,20 +1,40 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
+import { gsap } from 'gsap'
+import { motion } from 'framer-motion'
 const MainInfo = () => {
+
+  useEffect(() => {
+    gsap.to('.overlay', { y: '-100vh', delay: 1.5 });
+    gsap.to('.layer-1', { y: '-100vh', delay: .5 });
+    gsap.to('.layer-2', { y: '-100vh', delay: .7 });
+    gsap.to('.layer-3', { y: '-100vh', delay: .9 });
+  }, [])
   return (
-    <div className='relative'>
-        <div >
-            <img src={'/home.jpg'} className='w-full lg:h-full h-[400px] blur-[1px] ' alt='image'/>
+    <section className="hero h-[850px] p-10">
+      <div className="container">
+        <div className="content flex flex-col-reverse  sm:flex sm:flex-row sm:justify-between">
+          <motion.div initial={{x:-900}}
+          animate={{x:0}}
+          transition={{duration:1 , delay:1}} className="text sm:ml-10 lg:ml-20">
+            <h1 className=' text-4xl sm:text-3xl lg:text-6xl font-black tracking-wider sm:block flex justify-center text-center sm:text-start '>WE <br/> PROVIDE <br/> EXCELLENCE</h1>
+            <h5 className='mt-6  text-lg font-bold flex justify-center text-center sm:block sm:text-start'>Your one-stop computer shop</h5>
+            <p className=' text-sm font-bold  sm:mt-16 flex justify-center text-center sm:block sm:text-start'>Make your next computer purchase a smart one with our selection of top-rated machines</p>
+            <div className='flex justify-center text-center sm:block sm:text-start'><button className="w-auto h-auto  p-3 text-sm bg-gray-700 text-white  rounded-lg hover:bg-gray-900 mt-6 hover:text-white transition-all">SHOP NOW</button></div>
+          </motion.div>
+          <div className="watch-wrapper">
+            <img src="/home.webp" alt="home" className='w-full h-full'/>
+          </div>
         </div>
-        <div className='flex justify-center text-center'>
-        <div className='absolute top-[25%] '>
-        <div className='flex flex-col gap-2'>
-            <h1 className='text-3xl font-bold text-center w-auto'>WE MAKE YOUR LIFE EASIER</h1>
-            <p className='text-sm text-center max-w-[900px]'>We understand the amount of choices and options out there when it comes to buying a computer. Let us make your choice easier by providing you with expert advice and up-to-date product information - so you can pick the right system for your needs.</p>
-        </div>
-        </div>
-        </div>
-    </div>
+      </div>
+
+      <div className="overlay">
+        <div className="layer layer-1"></div>
+        <div className="layer layer-2"></div>
+        <div className="layer layer-3"></div>
+      </div>
+    </section>
   )
 }
 
