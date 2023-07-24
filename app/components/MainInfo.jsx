@@ -12,7 +12,7 @@ const MainInfo = () => {
     gsap.to('.layer-3', { y: '-100vh', delay: .9 });
   }, [])
   return (
-    <section className="hero h-[850px] p-10">
+    <section className="hero h-[750px] p-10 overflow-x-hidden">
       <div className="container">
         <div className="content flex flex-col-reverse  sm:flex sm:flex-row sm:justify-between">
           <motion.div initial={{x:-900}}
@@ -23,9 +23,9 @@ const MainInfo = () => {
             <p className=' text-sm font-bold  sm:mt-16 flex justify-center text-center sm:block sm:text-start'>Make your next computer purchase a smart one with our selection of top-rated machines</p>
             <div className='flex justify-center text-center sm:block sm:text-start'><button className="w-auto h-auto  p-3 text-sm bg-gray-700 text-white  rounded-lg hover:bg-gray-900 mt-6 hover:text-white transition-all">SHOP NOW</button></div>
           </motion.div>
-          <div className="watch-wrapper">
-            <img src="/home.webp" alt="home" className='w-full h-full'/>
-          </div>
+          <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2 , duration:2}} className="watch-wrapper">
+            <img src="/home.webp" alt="home" className='w-full h-full xl:h-[600px]'/>
+          </motion.div>
         </div>
       </div>
 

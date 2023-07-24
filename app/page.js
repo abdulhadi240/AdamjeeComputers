@@ -5,6 +5,7 @@ import Slider from './components/ImageSlider/Slider'
 import Products from './components/Products'
 import Service from './components/Service'
 import Navbar from './components/NAVBAR/Navbar'
+import About from './components/About'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Service />
       {/* <Lab/> */}
       <Products />
+      {/* <About/> */}
       <Slider />
     </div>
   )
