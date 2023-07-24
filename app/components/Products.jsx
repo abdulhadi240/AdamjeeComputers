@@ -10,6 +10,7 @@ const Products = () => {
                 <ProductCard src={'/work.jpg'} text={'Work Station'} />
                     <ProductCard src={'/gaming.jpg'} text={'Custom Built'} />
                     <ProductCard src={'/card.jpeg'} text={'Graphics Card'} />
+                    <ProductCard src={'/led.jpeg'} text={'Monitors'} />
                     <ProductCard src={'/headphone.jpg'} text={'Headphone'} />
                     <ProductCard src={'/mouse.jpg'} text={'Mouse'} />
                     <ProductCard src={'/keyboard.jpg'} text={'Keyboard'} />
