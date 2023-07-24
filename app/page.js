@@ -1,11 +1,14 @@
-import Image from 'next/image'
 import MainInfo from './components/MainInfo'
-import Lab from './components/Lab'
-import Slider from './components/ImageSlider/Slider'
-import Products from './components/Products'
-import Service from './components/Service'
 import Navbar from './components/NAVBAR/Navbar'
-import About from './components/About'
+import dynamic from 'next/dynamic'
+
+
+const Service = dynamic(() => import('./components/Service'))
+const Products = dynamic(() => import('./components/Products'))
+const Slider = dynamic(() => import('./components/Slider'))
+
+
+
 
 export default function Home() {
   return (
