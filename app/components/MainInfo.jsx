@@ -14,7 +14,7 @@ const MainInfo = () => {
   }, [])
   return (
     <>
-    <section className="hero h-auto p-10 overflow-x-hidden">
+    <section className="hero h-auto  overflow-x-hidden">
       <div className="container">
         <div className="content flex flex-col-reverse  sm:flex sm:flex-row sm:justify-between">
           <motion.div initial={{x:-900}}
