@@ -6,9 +6,9 @@ import Button from './Button'
 import {BsFillLightningChargeFill} from 'react-icons/bs'
 const Lab = () => {
   return (
-    <div className='px-32 tracking-widest mt-32 mb-32 overflow-hidden'>
+    <div className='sm:px-32 tracking-widest mt-32 mb-32 overflow-hidden'>
         <div className='flex lg:flex-row flex-col gap-10 justify-between mt-32'>
-            <div className='lg:w-[700px]'>
+            <div className='lg:w-[700px] w-auto'>
                 <motion.h1 initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1}} className='font-bold text-3xl '>Transforming Education with Art of Computer Labs</motion.h1>
                 <p className=' mt-10'>At Adamjee Computers, we take great pride in our 24-year journey of revolutionizing education through our contract-based computer lab establishment services. As a dedicated and experienced team, we have been empowering schools, libraries, companies, and organizations with cutting-edge computer labs, paving the way for a brighter future for students and professionals alike.</p>
                 <div className='flex gap-10 justify-center mt-14'>
