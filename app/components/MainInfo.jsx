@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { gsap } from 'gsap'
 import { motion } from 'framer-motion'
+import BrandSlider from './BrandSlider'
 const MainInfo = () => {
 
   useEffect(() => {
@@ -12,7 +13,8 @@ const MainInfo = () => {
     gsap.to('.layer-3', { y: '-100vh', delay: .9 });
   }, [])
   return (
-    <section className="hero h-[750px] p-10 overflow-x-hidden">
+    <>
+    <section className="hero h-auto p-10 overflow-x-hidden">
       <div className="container">
         <div className="content flex flex-col-reverse  sm:flex sm:flex-row sm:justify-between">
           <motion.div initial={{x:-900}}
@@ -34,7 +36,11 @@ const MainInfo = () => {
         <div className="layer layer-2"></div>
         <div className="layer layer-3"></div>
       </div>
+
+      
     </section>
+    <BrandSlider/>
+    </>
   )
 }
 
