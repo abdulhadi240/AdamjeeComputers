@@ -3,7 +3,7 @@ import MobileMenu from "./MobileMenu";
 import Name from "./Name";
 const Navbar = () => {
   return (
-    <div className="w-full h-10 lg:flex lg:justify-between hidden px-10 pt-4 pb-14 fixed bg-white top-0">
+    <div className="w-full h-10 lg:flex lg:justify-between hidden px-10 pt-4 pb-14 absolute top-0 bg-white">
         <div className="mt-2">LOGO</div>
         <div className="flex gap-4 text-black ">
             <Name text={'Home'}/>

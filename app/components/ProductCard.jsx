@@ -9,12 +9,12 @@ const ProductCard = ({src , text}) => {
     <motion.div
     initial={{opacity:0}}
         whileInView={{opacity:1}}
-        transition={{duration:1}} className='relative w-72 h-56 overflow-hidden group'>
+        transition={{duration:1}} className='relative w-72 h-56 overflow-hidden group z-50'>
         <div className='overflow-hidden '>
             <Image src={'/p.png'} height={300} width={300} className='overflow-hidden' alt='border'/>
         </div>
         <div className='mb-1'>
-            <img src={src} className='w-full h-[210px] group-hover:scale-105 transition-all absolute top-0 left-1 object-fill  inset-6  -z-50 overflow-hidden' alt='products'/>
+            <img src={src} className='w-full h-[210px] group-hover:scale-105 brightness-75 group-hover:brightness-110 transition-all absolute top-0 left-1 object-fill  inset-6  -z-50 overflow-hidden' alt='products'/>
         </div>
         <div className='absolute top-1 right-6'>
             <h1 className='font-bold text-sm'>{text}</h1>
