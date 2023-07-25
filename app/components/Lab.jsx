@@ -6,7 +6,11 @@ import Button from './Button'
 import {BsFillLightningChargeFill} from 'react-icons/bs'
 const Lab = () => {
   return (
-    <div className='sm:px-32 tracking-widest mt-32 mb-32 overflow-hidden'>
+    <div>
+        <div className='flex justify-center text-3xl mt-10 font-bold'>TECH LABS</div>
+            <div className='flex justify-center text-sm mt-1 text-center'>We provide services of establishing computer labs</div>
+    
+    <div className='sm:px-32 tracking-widest mt-16 mb-32 overflow-hidden'>
         <div className='flex lg:flex-row flex-col gap-10 justify-between mt-32'>
             <div className='lg:w-[700px] w-auto'>
                 <motion.h1 initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1}} className='font-bold text-3xl '>Transforming Education with Art of Computer Labs</motion.h1>
@@ -48,6 +52,7 @@ const Lab = () => {
         </div>
 
         
+    </div>
     </div>
   )
 }
