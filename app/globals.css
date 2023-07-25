@@ -63,3 +63,7 @@ html {
 .layer-3 {
     flex: 1;
 }
+
+.image{
+    height: 100vh;
+}
