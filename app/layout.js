@@ -1,6 +1,7 @@
 import './globals.css'
 import ChatwoptWidget from './components/ChatWoot'
 import { Manrope } from 'next/font/google'
+import FooterBar from './components/FooterBar'
 
 const inter = Manrope({ 
   subsets: ['latin'],

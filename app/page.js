@@ -1,3 +1,4 @@
+import FooterBar from './components/FooterBar'
 import MainInfo from './components/MainInfo'
 import Navbar from './components/NAVBAR/Navbar'
 import dynamic from 'next/dynamic'
@@ -18,10 +19,12 @@ export default function Home() {
       <MainInfo />
       </div>
       <Service />
-      <Lab/>
       <Products />
-      {/* <About/> */}
-      <Slider />
+      <Lab/>
+      <FooterBar/>
+
+      
+      
     </div>
   )
 }
