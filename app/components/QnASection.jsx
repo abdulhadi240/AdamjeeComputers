@@ -4,7 +4,7 @@ import QnA from './QnA'
 const QnASection = () => {
   return (
     <div>
-     <div className='text-3xl font-bold flex justify-center mt-20'>Frequently asked questions </div>
+     <div className='text-3xl font-bold flex justify-center text-center mt-20'>Frequently asked questions </div>
      <div className='flex flex-col gap-4 lg:gap-6 mt-10'>
         <QnA heading={'What types of computers does your company offer for sale?'} text={'We offer a wide range of computers to suit various needs, including desktops, laptops, workstations, and gaming PCs. Our selection includes top brands and customizable configurations to meet your specific requirements.'}/>
         <QnA heading={'Can your company provide bulk orders for  businesses looking to establish computer labs?'} text={' Absolutely! We cater to bulk orders for educational institutions, businesses, and other organizations interested in setting up computer labs. Our team can assist you in selecting the right computers and accessories to create a productive and efficient computing environment.'}/>
