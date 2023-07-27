@@ -16,11 +16,11 @@ const FooterBar = () => {
                     <Name text={'Contact us'} link={'/CONTACT'} />
 
                 </div>
-                
+
             </div>
             <div className='sm:mt-2 text-center'>
-                    @All right reserved 2023
-                </div>
+                @All right reserved 2023
+            </div>
 
         </div>
     )
