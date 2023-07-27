@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic'
 const Service = dynamic(() => import('./components/Service'))
 const Products = dynamic(() => import('./components/Products'))
 const Lab = dynamic(() => import('./components/Lab'))
+const Contact = dynamic(() => import('./components/Contact'))
 
 
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Service />
       <Products />
       <Lab/>
+      <Contact/>
       <FooterBar/>
 
       
