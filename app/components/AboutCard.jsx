@@ -10,8 +10,8 @@ const AboutCard = ({heading , text , src}) => {
                 <img src={src} alt="lab" className='brightness-[0.6] object-fill group-hover:brightness-[0.4] transition-all cursor-pointer' />
                 </div>
             <div className='absolute top-20 left-8 sm:top-28 sm:left-16  z-50 font-bold text-white tracking-wider '>
-                <h1 className=' text-4xl max-w-80 text-center'>{heading}</h1>
-                <p className=' text-base text-center max-w-80 mt-2'>{text}</p>
+                <h1 className=' text-4xl max-w-80 text-start'>{heading}</h1>
+                <p className=' text-base text-start w-72 mt-2 mr-3 sm:mr-0'>{text}</p>
             </div>
         </div>
     </motion.div>

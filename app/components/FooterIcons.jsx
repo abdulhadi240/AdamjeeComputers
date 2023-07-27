@@ -1,12 +1,14 @@
 import React from 'react'
-import { AiOutlineWhatsApp, AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineWhatsApp, AiOutlineMail, AiOutlineFacebook } from 'react-icons/ai'
+import {FaFacebookF} from 'react-icons/fa'
 const FooterIcons = () => {
   return (
     <div>
-        <div className='border-r-[1px] flex'>
+        <div className='flex gap-6 mt-1 justify-center sm:justify-normal'>
             
-            <AiOutlineWhatsApp size={24}/>
-            <AiOutlineMail size={24}/>
+            <AiOutlineWhatsApp size={32}/>
+            <AiOutlineMail size={32}/>
+            <FaFacebookF size={32}/>
         </div>
     </div>
   )

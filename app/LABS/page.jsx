@@ -2,6 +2,7 @@ import React from 'react'
 import Parallex from '../components/Parallex'
 import Navbar from '../components/NAVBAR/Navbar'
 import LabData from '../components/LabData'
+import FooterBar from '../components/FooterBar'
 const page = () => {
     return (
       <>
@@ -17,9 +18,8 @@ const page = () => {
       <LabData content={'Our services extend beyond the initial setup. We offer ongoing technical support and maintenance, ensuring the smooth functioning of your computer labs for years to come.'} reverse={false} position={true} heading={'Technical Support and Training'} text={'Our team will appoint qualified IT personnel to provide comprehensive technical support, troubleshoot issues, and maintain the labs infrastructure regularly. Furthermore, we will organize tailored training sessions for your staff and users to familiarize them with the available resources, software applications, and best practices for optimal utilization.'} src={'/training.jpg'}/>
       <LabData content={'Our team comprises highly skilled and passionate individuals who are dedicated to excellence.'} reverse={true} position={false} heading={'Implementation and Inauguration'} text={'Our professionals will execute the lab setup meticulously, ensuring all components are in place and fully functional. We will orchestrate a memorable inauguration ceremony, inviting key stakeholders and dignitaries to showcase the labs potential and profound impact on your organization.'} src={'/implement.avif'}/>
       <LabData content={'Your satisfaction is our priority. We involve you throughout the design process to create a lab that exceeds your expectations.'} reverse={false} position={true} heading={'Monitoring and Evaluation'} text={'As a company dedicated to your success, we will establish a robust system for continuous monitoring and evaluation. Through feedback mechanisms, we will assess the labs effectiveness in achieving its objectives, identify areas for improvement, and implement necessary adjustments to ensure sustained growth and success.'} src={'/service.avif'}/>
-
       </div>
-      
+      <FooterBar/>
        </>
        
       )

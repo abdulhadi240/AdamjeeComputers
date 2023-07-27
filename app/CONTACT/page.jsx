@@ -6,6 +6,7 @@ import { BsChat } from 'react-icons/bs'
 import Contracts from '../components/Contracts'
 import QnA from '../components/QnA'
 import QnASection from '../components/QnASection'
+import FooterBar from '../components/FooterBar'
 
 const page = () => {
   return (
@@ -18,7 +19,7 @@ const page = () => {
       </div>
       <Contracts/>
       <QnASection/>
-
+      <FooterBar/>
     </div>
   )
 }
