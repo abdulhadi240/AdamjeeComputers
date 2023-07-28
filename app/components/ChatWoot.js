@@ -18,7 +18,7 @@ const ChatwoptWidget = () => {
     script.async = true;
     script.onload = function () {
       window.chatwootSDK.run({
-        websiteToken: 'UNFg2dD5syhrzFgzpytBaSHb',
+        websiteToken: '7BCLkdBCPuJus9AWmhW8EsRC',
         baseUrl: BASE_URL
       });
     };
