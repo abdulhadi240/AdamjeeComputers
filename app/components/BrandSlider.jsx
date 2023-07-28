@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 const BrandSlider = () => {
   const brands = [
     // Replace the URLs with the URLs of your brand images
-    "/brand.png",
-    "/brand.png",
-    "/brand.png",
-    "/brand.png",
-    "/brand.png",
-    "/brand.png",
+    "/brand1.webp",
+    "/brand2.webp",
+    "/brand3.webp",
+    "/brand4.webp",
+    "/brand6.png",
   ];
 
   return (

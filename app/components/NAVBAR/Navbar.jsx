@@ -20,7 +20,7 @@ const Navbar = () => {
           <Name text={'About us'} link={'/ABOUT'} />
           <Name text={'Contact us'} link={'/CONTACT'} />
         </div>
-        <div><button className="w-auto h-auto p-3 text-sm bg-gray-400 text-white  rounded-lg hover:bg-gray-700 hover:text-white transition-all">SHOP NOW</button></div>
+        <div><button className="w-auto h-auto p-3 text-sm bg-black text-white  rounded-full  hover:bg-black/75 hover:text-white transition-all">SHOP NOW</button></div>
       </div>
       {mobilemenu ? (
         <AiOutlineMenu size={20} className="sm:hidden block mt-3 ml-2" onClick={() => { setMobileMenu(false) }} />
