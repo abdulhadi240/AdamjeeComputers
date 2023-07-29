@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import Navbar from '../components/NAVBAR/Navbar'
 import ContactCard from '../components/ContactCard'
@@ -19,7 +18,7 @@ const page = () => {
       </div>
       <Contracts/>
       <QnASection/>
-      <FooterBar/>
+      {/* <FooterBar/> */}
     </div>
   )
 }

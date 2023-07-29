@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import { BsPlus } from 'react-icons/bs'
 import { AiOutlineMinus } from 'react-icons/ai'

@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
         {children}
         <ChatwoptWidget/>
         </body>
+        <FooterBar/>
      
 
     </html>

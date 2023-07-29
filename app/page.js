@@ -21,10 +21,11 @@ export default function Home() {
       <Products />
       <Lab/>
       <Contact/>
-      <FooterBar/>
+      {/* <FooterBar/> */}
 
       
       
     </div>
   )
 }
+
