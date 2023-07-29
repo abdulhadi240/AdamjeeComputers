@@ -7,8 +7,8 @@ const Contracts = dynamic(() => import('../components/Contracts'))
 const QnASection = dynamic(() => import('../components/QnASection'))
 
 export const metadata = {
-  title: 'Contact Us ',
-  description: 'We are available 24/7',
+  title: 'Contact Adamjee Computers: IT Solutions & Labs ',
+  description: 'Reach out to us for top-notch IT solutions, services, and advanced lab facilities. Experience innovation with Adamjee Computers today!',
 }
 const page = () => {
   return (

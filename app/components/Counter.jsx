@@ -95,19 +95,19 @@ const Counter = () => {
       
       <div ref={counterRef} className="flex justify-center ">
         <div className='flex lg:gap-32'>
-          <div className=" sm:mx-6 mt-6">
+          <div className=" sm:mx-6 mx-3 mt-6">
             <div className="text-lg text-center lg:text-4xl font-bold text-gray-800">{years}+</div>
             <div className="text-gray-600 text-center">Years of Experience</div>
           </div>
-          <div className="mt-6 sm:mx-6">
+          <div className="mt-6 mx-3 sm:mx-6">
             <div className="text-lg text-center lg:text-4xl font-bold text-gray-800">{clients}+</div>
             <div className="text-gray-600 text-center">Customer</div>
           </div>
-          <div className=" mt-6 sm:mx-6">
+          <div className=" mt-6 mx-3 sm:mx-6">
             <div className="text-lg  lg:text-4xl font-bold text-gray-800">{Employee}+</div>
             <div className="text-gray-600 text-center">Brands</div>
           </div>
-          <div className=" mt-6 sm:mx-6">
+          <div className=" mt-6 mx-3 sm:mx-6">
             <div className="text-lg  lg:text-4xl font-bold text-gray-800">{Bags}+</div>
             <div className="text-gray-600 text-center">Institution</div>
           </div>

@@ -10,8 +10,8 @@ const Counter = dynamic(() => import('../components/Counter'))
 const Slider = dynamic(() => import('../components/ImageSlider/Slider'))
 
 export const metadata = {
-  title: 'About Us',
-  description: 'At Adamjee Computers, we take great pride in our 24-year journey',
+  title: 'Adamjee Computers: Empowering Innovation',
+  description: 'Discover our passion for empowering innovation in IT solutions, services, and advanced lab establishments at Adamjee Computers.',
 }
 
 const page = () => {

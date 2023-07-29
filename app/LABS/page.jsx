@@ -4,8 +4,8 @@ import Navbar from '../components/NAVBAR/Navbar'
 import LabData from '../components/LabData'
 
 export const metadata = {
-  title: 'Labs',
-  description: 'Your satisfaction is our priority. We involve you throughout the design process to create a lab that exceeds your expectations.',
+  title: 'Adamjee Computers: Advanced IT Labs & Services',
+  description: 'Empowering Innovations: Adamjee Computers Advanced IT Labs offer Next-Level Solutions. Elevate Your Tech Capabilities Now!',
 }
 const page = () => {
     return (
