@@ -18,7 +18,7 @@ const page = () => {
         <Choose/>
         <Counter/>
         <Slider/>
-        <FooterBar/>
+        {/* <FooterBar/> */}
     </div>
   )
 }
