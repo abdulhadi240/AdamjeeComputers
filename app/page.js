@@ -8,8 +8,8 @@ const Products = dynamic(() => import('./components/Products'))
 const Lab = dynamic(() => import('./components/Lab'))
 
 export const metadata = {
-  title: 'Adamjee Computers',
-  description: 'Your one-stop computer shop',
+  title: 'google-site-verification',
+  description: 'Kfp5JBmSJtONW17fAhaGFjnaPBszEi6dD6JUbXB2VEY'
 }
  
 
