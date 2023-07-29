@@ -8,9 +8,11 @@ const inter = Manrope({
   weight:['400']
 })
 
+
 export const metadata = {
-  title: 'google-site-verification',
-  description: 'Kfp5JBmSJtONW17fAhaGFjnaPBszEi6dD6JUbXB2VEY'
+  title: 'Adamjee Computers',
+  description: 'Your one-stop computer shop',
+
 }
 
 export default function RootLayout({ children }) {
