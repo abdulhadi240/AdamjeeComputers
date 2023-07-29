@@ -1,12 +1,15 @@
 import React from 'react'
 import Navbar from '../components/NAVBAR/Navbar'
-import ContactCard from '../components/ContactCard'
-import { BsChat } from 'react-icons/bs'
-import Contracts from '../components/Contracts'
-import QnA from '../components/QnA'
-import QnASection from '../components/QnASection'
-import FooterBar from '../components/FooterBar'
+import dynamic from 'next/dynamic'
 
+
+const Contracts = dynamic(() => import('../components/Contracts'))
+const QnASection = dynamic(() => import('../components/QnASection'))
+
+export const metadata = {
+  title: 'Contact Us ',
+  description: 'We are available 24/7',
+}
 const page = () => {
   return (
     <div>

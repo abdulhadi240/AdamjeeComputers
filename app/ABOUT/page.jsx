@@ -1,11 +1,18 @@
 import React from 'react'
 import AboutInfo from '../components/AboutInfo'
 import Navbar from '../components/NAVBAR/Navbar'
-import FooterBar from '../components/FooterBar'
-import Choose from '../components/Choose'
-import Counter from '../components/Counter'
-import Slider from '../components/ImageSlider/Slider'
-import LabData from '../components/LabData'
+import dynamic from 'next/dynamic'
+
+
+const LabData = dynamic(() => import('../components/LabData'))
+const Choose = dynamic(() => import('../components/Choose'))
+const Counter = dynamic(() => import('../components/Counter'))
+const Slider = dynamic(() => import('../components/ImageSlider/Slider'))
+
+export const metadata = {
+  title: 'About Us',
+  description: 'At Adamjee Computers, we take great pride in our 24-year journey',
+}
 
 const page = () => {
   return (

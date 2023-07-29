@@ -2,7 +2,11 @@ import React from 'react'
 import Parallex from '../components/Parallex'
 import Navbar from '../components/NAVBAR/Navbar'
 import LabData from '../components/LabData'
-import FooterBar from '../components/FooterBar'
+
+export const metadata = {
+  title: 'Labs',
+  description: 'Your satisfaction is our priority. We involve you throughout the design process to create a lab that exceeds your expectations.',
+}
 const page = () => {
     return (
       <>
