@@ -29,7 +29,7 @@ const Slider = () => {
             {Images.map((images)=>{
               return(
                 <motion.div className=' p-[20px] ' key={images}>
-                  <Image src={images} width={300} height={200} className='w-[100%] h-[100%] sm:ml-52 ml-44   rounded-2xl'/>
+                  <Image src={images} width={300} height={200} className='w-[100%] h-[100%] sm:ml-52 ml-44   rounded-2xl' alt='images'/>
                 </motion.div>
               )
             })}
