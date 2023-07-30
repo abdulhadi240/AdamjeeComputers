@@ -12,7 +12,7 @@ const ContactCard1 = ({ Ricons, Heading, text, link, label }) => {
                 <div className='text-lg font-bold '>{Heading}</div>
                 <div className='text-xs mt-1'>{text}</div>
                 <div className='flex flex-col'>
-                    <div className='underline mt-6 text-sm font-semibold'>
+                    <div className='underline mt-2 text-sm font-semibold'>
                         Moiz : 03085066630
                     </div>
                     <div className='underline mt-1 text-sm font-semibold'>
