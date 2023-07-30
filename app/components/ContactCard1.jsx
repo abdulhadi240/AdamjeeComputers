@@ -1,12 +1,12 @@
-'use client'
-import React, { useState } from 'react'
+
+import React from 'react'
 import Link from 'next/link'
 const ContactCard1 = ({ Ricons, Heading, text, link, label }) => {
-    const [color1, setColor1] = useState('black')
+
     return (
-        <Link href={link} target='_blank'><div className='border-[1px] shadow-lg w-64 h-64 p-3 group hover:bg-black transition-all' onMouseEnter={() => setColor1('white')} onMouseLeave={() => setColor1('black')}>
+        <Link href={link} target='_blank'><div className='border-[1px] shadow-lg w-64 h-64 p-3 group hover:bg-black transition-all'>
             <div className='w-9 h-auto p-1 rounded-lg border-[1px] transition-all ml-4'>
-                <Ricons size={24} color={`${color1}`} />
+                <Ricons size={24} color='black' />
             </div>
             <div className='flex flex-col gap-1 mt-20 group-hover:text-white transition-all ml-4'>
                 <div className='text-lg font-bold '>{Heading}</div>
