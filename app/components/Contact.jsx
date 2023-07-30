@@ -32,7 +32,7 @@ const Contact = () => {
         Place Your Enquiry
       </h1>
 
-      <div className="flex justify-center ">
+      <div className="flex justify-center">
         <div className=" flex flex-col sm:flex-row justify-center sm:gap-2 lg:gap-16 ">
           <form
             target="_blank"
@@ -107,7 +107,6 @@ const Contact = () => {
             <Image src={'/WhatsApp.jpeg'} height={420} width={420} alt="QR CODE" />
           </div>
         </div>
-
       </div>
     </div>
   );

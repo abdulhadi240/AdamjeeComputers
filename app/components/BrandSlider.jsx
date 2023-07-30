@@ -16,11 +16,11 @@ const BrandSlider = () => {
       <motion.div
         className="flex"
         animate={{
-          x: [-100, 0, 100, 200, 300, 400, 500],
+          x: [-100, 0, 100, 200, 300, 400, 500 , 600 , 700 , 800, 900],
         }}
         transition={{
           repeat: Infinity,
-          duration: 15,
+          duration: 10,
           ease: "linear",
           
         }}
