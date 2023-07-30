@@ -2,6 +2,7 @@ import './globals.css'
 import ChatwoptWidget from './components/ChatWoot'
 import { Manrope } from 'next/font/google'
 import FooterBar from './components/FooterBar'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Manrope({ 
   subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         {children}
         <ChatwoptWidget/>
         <FooterBar/>
+        <Analytics />
         </body>
         
         
