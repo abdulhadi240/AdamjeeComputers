@@ -16,10 +16,10 @@ const ContactCard1 = ({ Ricons, Heading, text, link, label }) => {
                         Moiz : 03085066630
                     </div>
                     <div className='underline mt-1 text-sm font-semibold'>
-                        Moiz : 03085066630
+                        Saif : 03052108020
                     </div>
                     <div className='underline mt-1 text-sm font-semibold'>
-                        Moiz : 03085066630
+                        Sohail : 03007079539
                     </div>
 
 
