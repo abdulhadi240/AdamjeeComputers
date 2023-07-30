@@ -36,7 +36,7 @@ const Navbar = () => {
 
       {!mobilemenu && (
         <div
-          className="fixed top-0 bg-primary-black  z-50 sm:hidden ">
+          className="fixed top-0 left-0 bg-primary-black  z-50 sm:hidden ">
           <MobileMenu setMobileMenu={setMobileMenu} color={'white'} background={true} border={true} margin={20} hide={true} />
         </div>
       )}
