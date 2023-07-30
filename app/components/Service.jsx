@@ -9,6 +9,9 @@ const Service = () => {
             <div className='flex justify-center text-sm mt-1 text-center'>All the services are available for you at the moment</div>
             <div className='flex justify-center mb-16'>
                 <div className='mt-16 grid grid-cols-1 sm:grid-cols-2 gap-20 lg:grid-cols-3 overflow-x-hidden'>
+                <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}}>
+                    <Services src={'/software.png'} heading={'SALES OF COMPUTER'} text={' As businesses and individuals embrace digital transformation, our offerings cater to their evolving needs, making us a reliable partner in the ever-expanding world of technology. '} />
+                    </motion.div>
                     <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration:1}}>
                     <Services src={'/pack.png'} heading={'DATA BACKUP'} text={'Our secure data backup service ensures all customer information is safely and reliably stored.'} />
                     </motion.div >
@@ -21,11 +24,9 @@ const Service = () => {
                     <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration:1}}>
                     <Services src={'/custom.png'} heading={'CUSTOM BUILTS'} text={'Our custom builds service provides clients with tailored computer systems based on their specifications and needs.'} />
                     </motion.div>
-                    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}}>
-                    <Services src={'/software.png'} heading={'SOFTWARE UPDATES'} text={'Our software upgrades service offers quick and easy solutions to keep your computer running smoothly.'} />
-                    </motion.div>
+                    
                     <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration:1}}>
-                    <Services src={'/virus.png'} heading={'VIRUS REMOVAL'} text={'Our virus removal service quickly and safely eliminates malware from your computer, allowing you to shop for new hardware with peace of mind.'} />
+                    <Services src={'/virus.png'} heading={'LAB ESTABLISHMENT'} text={'At Adamjee Computers, we take great pride in our 24-year journey of revolutionizing education through our contract-based computer lab establishment services.'} />
                     </motion.div>
                 </div>
             </div>

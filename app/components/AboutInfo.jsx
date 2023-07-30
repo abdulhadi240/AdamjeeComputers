@@ -35,7 +35,7 @@ const AboutInfo = () => {
                     <div className='flex justify-center'>
                     <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-3 lg:ml-4 '>
                         <AboutCard src={'/lab.jpg'} heading={'Lab Establishment'} text={'We establish computer labs of your choice'}/>
-                        <AboutCard src={'/computer.avif'} heading={'Ecoomerce '} text={'We have all kind of computer machines'}/>
+                        <AboutCard src={'/computer.avif'} heading={'Ecommerce '} text={'We have all kind of computer machines'}/>
                         <AboutCard src={'/hardware.avif'} heading={'Hardware service'} text={'We provide all kind of Software and Hardware service'}/>
 
                     </div>

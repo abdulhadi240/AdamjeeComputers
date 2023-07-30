@@ -36,7 +36,7 @@ const Contact = () => {
         <div className=" flex flex-col sm:flex-row justify-center sm:gap-2 lg:gap-16 ">
           <form
             target="_blank"
-            action="https://formspree.io/f/xoqovvzg"
+            action="https://formspree.io/f/xpzgqqbz"
             method="POST"
             className=""
           >
@@ -104,7 +104,7 @@ const Contact = () => {
             </button>
           </form>
           <div className="mt-2">
-            <Image src={'/WhatsApp.jpeg'} height={420} width={420} alt="QR CODE" />
+            <Image src={'/qrcode.jpg'} height={420} width={420} alt="QR CODE" />
           </div>
         </div>
       </div>

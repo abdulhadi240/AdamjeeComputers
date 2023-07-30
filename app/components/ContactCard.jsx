@@ -11,7 +11,9 @@ const ContactCard = ({Ricons , Heading , text, link , label}) => {
         <div className='flex flex-col gap-1 mt-20 group-hover:text-white transition-all ml-4'>
             <div className='text-lg font-bold '>{Heading}</div>
             <div className='text-xs mt-1'>{text}</div>
+            <div>
             <div className='underline mt-6 text-sm font-semibold'>{label}</div>
+            </div>
         </div>
     </div></Link>
   )
