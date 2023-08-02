@@ -1,3 +1,4 @@
+'use client'
 import './globals.css'
 import ChatwoptWidget from './components/ChatWoot'
 import { Manrope } from 'next/font/google'
