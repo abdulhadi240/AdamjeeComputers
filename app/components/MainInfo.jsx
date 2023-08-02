@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { gsap } from 'gsap'
 import { motion } from 'framer-motion'
 import BrandSlider from './BrandSlider'
+import ShopNowButton from './ShopNowButton'
 const MainInfo = () => {
 
   useEffect(() => {
@@ -23,7 +24,7 @@ const MainInfo = () => {
             <h1 className=' text-4xl sm:text-3xl lg:text-6xl font-black tracking-wider sm:block flex justify-center text-center sm:text-start '>WE <br/> PROVIDE <br/> EXCELLENCE</h1>
             <h5 className='mt-6  text-lg font-bold flex justify-center text-center sm:block sm:text-start'>Your one-stop computer shop</h5>
             <p className=' text-sm font-bold  sm:mt-16 flex justify-center text-center sm:block sm:text-start'>Make your next computer purchase a smart one with our selection of top-rated machines</p>
-            <div className='flex justify-center text-center sm:block sm:text-start'><button className="w-auto h-auto  p-3 text-sm bg-black text-white  rounded-lg hover:bg-black/75 mt-6 hover:text-white transition-all">SHOP NOW</button></div>
+            <div className='flex justify-center text-center sm:block sm:text-start mt-6'><ShopNowButton/></div>
           </motion.div>
           <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2 , duration:2}} className="watch-wrapper">
             <img src="/home.webp" alt="home" className='w-full h-full xl:h-[600px]'/>

@@ -1,14 +1,12 @@
 'use client'
-import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import React, { useState} from "react";
+import { AiOutlineMenu } from 'react-icons/ai'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
-import { BsWhatsapp } from 'react-icons/bs'
-import { FaFacebook } from 'react-icons/fa'
-import { MdEmail } from 'react-icons/md'
 import MobileMenu from "./MobileMenu";
 import Name from "./Name";
 import Image from "next/image";
 import Link from "next/link";
+import ShopNowButton from "../ShopNowButton";
 const Navbar = () => {
   const [mobilemenu, setMobileMenu] = useState(true);
 
@@ -24,7 +22,8 @@ const Navbar = () => {
           <Name text={'About us'} link={'/ABOUT'} />
           <Name text={'Contact us'} link={'/CONTACT'} />
         </div>
-       <div><button className="w-auto h-auto p-3 text-sm bg-black text-white  rounded-full  hover:bg-black/75 hover:text-white transition-all">SHOP NOW</button></div>
+       <ShopNowButton/>
+       {/* <div><button  className="w-auto h-auto p-3 text-sm bg-black text-white  rounded-full  hover:bg-black/75 hover:text-white transition-all">SHOP NOW</button></div> */}
       </div>
       {mobilemenu ? (
         <AiOutlineMenu size={20} className="sm:hidden block mt-3 ml-2" onClick={() => { setMobileMenu(false) }} />

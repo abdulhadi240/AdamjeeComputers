@@ -25,10 +25,6 @@ export default function RootLayout({ children }) {
         <FooterBar/>
         <Analytics />
         </body>
-        
-        
-     
-
     </html>
   )
 }
