@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-const AboutCard = ({heading , text , src}) => {
+const AboutCard = ({heading , text , src , link}) => {
   return (
-    <Link href={'/LABS'}><motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2 , duration:1}}>
+    <Link href={link}><motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:2 , duration:1}}>
         <div className='w-[400px] sm:w-[500px] h-56 sm:h-64 lg:h-72  relative group '>
             <div className=''>
                 <img src={src} alt="lab" className='brightness-[0.6] object-fill group-hover:brightness-[0.4] transition-all cursor-pointer' />

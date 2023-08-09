@@ -11,7 +11,7 @@ const FooterBar = () => {
             <div className='flex'>
                 <div className='flex justify-center sm:justify-start text-center'>
                     <Name text={'Contracts'} link={'/LABS'} />
-                    <Name text={'About us'} link={'/'} />
+                    <Name text={'About us'} link={'/ABOUT'} />
                     <Name text={'Contact us'} link={'/CONTACT'} />
 
                 </div>

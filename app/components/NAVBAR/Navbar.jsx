@@ -22,7 +22,10 @@ const Navbar = () => {
           <Name text={'About us'} link={'/ABOUT'} />
           <Name text={'Contact us'} link={'/CONTACT'} />
         </div>
+        <div className='ml-4'>
        <ShopNowButton/>
+       </div>
+
        {/* <div><button  className="w-auto h-auto p-3 text-sm bg-black text-white  rounded-full  hover:bg-black/75 hover:text-white transition-all">SHOP NOW</button></div> */}
       </div>
       {mobilemenu ? (
