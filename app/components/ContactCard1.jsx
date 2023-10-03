@@ -13,13 +13,13 @@ const ContactCard1 = ({ Ricons, Heading, text, link, label }) => {
                 <div className='text-xs mt-1'>{text}</div>
                 <div className='flex flex-col'>
                     <div className='underline mt-2 text-sm font-semibold'>
-                        Moiz : 03085066630
+                        Abdul Moiz Adamjee : 03085066630
                     </div>
                     <div className='underline mt-1 text-sm font-semibold'>
-                        Saif : 03052108020
+                        Muhammad Saif Adamjee : 03052108020
                     </div>
                     <div className='underline mt-1 text-sm font-semibold'>
-                        Sohail : 03007079539
+                         Muhammad Sohail Adamjee : 03007079539
                     </div>
 
 
