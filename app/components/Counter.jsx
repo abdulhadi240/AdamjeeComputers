@@ -12,7 +12,7 @@ const Counter = () => {
   const [woven, setWoven] = useState(0);
 
 
-  const yearsOfExperience = 25;
+  const yearsOfExperience = 31;
   const clientsCount = 3000;
   const EmployeeCount = 100;
   const BagsCount = 400;
