@@ -1,116 +1,148 @@
 "use client";
 import React from "react";
-import { useState } from "react";
-import Image from "next/image";
+import { motion } from "framer-motion";
+import { FaMailBulk, FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import MagneticFramer from "../components/MagneticFramer";
+import Link from "next/link";
 
 const Contact = () => {
-  const [text, setText] = useState("");
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [comapny, setCompany] = useState("");
-  const [message, setMessage] = useState("");
-
-  const HandleChange = (e) => {
-    setText(e.target.value);
-  };
-  const HandleChange1 = (e) => {
-    setName(e.target.value);
-  };
-  const HandleChange2 = (e) => {
-    setPhone(e.target.value);
-  };
-  const HandleChange3 = (e) => {
-    setCompany(e.target.value);
-  };
-  const HandleChange4 = (e) => {
-    setMessage(e.target.value);
-  };
-
   return (
-    <div className="w-[100%] mt-20 md:mt-0 bg-gray-50 h-full ">
-      <h1 className="text-3xl font-bold mb-8 flex justify-center lg:ml-20   tracking-wider mt-8 pt-8">
-        Place Your Enquiry
-      </h1>
+    <footer className="relative w-screen h-auto py-8 text-black bg-white sm:px-20 ">
+      {/* Curve SVG */}
 
-      <div className="flex justify-center">
-        <div className=" flex flex-col sm:flex-row justify-center sm:gap-2 lg:gap-16 ">
+      <div className="container relative z-20 flex flex-col items-center justify-between mx-auto lg:flex-row">
+        {/* Left Section */}
+
+        {/* Right Section */}
+        <motion.div
+          className="text-center lg:text-left"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="mb-24 text-3xl font-bold uppercase sm:text-5xl">Let's Collaborate</h3>
           <form
-            target="_blank"
+            className="flex flex-col gap-6"
             action="https://formspree.io/f/xpzgqqbz"
             method="POST"
-            className=""
+            
           >
-            <div className="flex flex-col lg:flex-row gap-4 lg:ml-20">
-              <div>
-                <div className="mt-4 relative">
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    name="Name"
-                    value={name}
-                    className="text-sm rounded-lg w-80 sm:w-80 lg:w-96 peer h-10 placeholder:pl-2 border-2 value:text-sm"
-                    onChange={HandleChange1}
-                  />
-                </div>
-                <div className="mt-4 relative">
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    name="Email"
-                    required
-                    value={text}
-                    className="text-sm rounded-lg peer w-80 sm:w-80 lg:w-96 h-10 placeholder:pl-2  border-2"
-                    onChange={HandleChange}
-                  />
-                </div>
-                <div className="mt-4 relative">
-                  <input
-                    type="text"
-                    placeholder="Phone Number"
-                    name="phone"
-                    required
-                    value={phone}
-                    className="text-sm placeholder:pl-2  rounded-lg w-80 sm:w-80 lg:w-96 h-10  border-2"
-                    onChange={HandleChange2}
-                  />
-                </div>
-                <div className="mt-4 relative">
-                  <input
-                    type="name"
-                    placeholder="Company Name"
-                    name="Company"
-                    value={comapny}
-                    className="text-sm placeholder:pl-2  rounded-lg  w-80 sm:w-80 lg:w-96 h-10  border-2"
-                    onChange={HandleChange3}
-                  />
-                </div>
-                <textarea
-                  id="message"
-                  name="message"
-                  onChange={HandleChange4}
-                  value={message}
-                  placeholder="Enter Message"
-                  className="rounded-lg placeholder:text-sm placeholder:pl-2 mt-4 h-36 w-80 lg:w-96"
-                />
+            {/* Full Name */}
+            <div className="mb-4">
+              <div className="flex items-center mb-2">
+                <span className="mr-2 text-lg sm:text-2xl">*</span>
+                <h1 className="text-lg sm:text-2xl">What is your name?</h1>
               </div>
+              <input
+                type="text"
+                required
+                name="Name"
+                placeholder="Full Name"
+                className="bg-transparent  text-lg sm:text-2xl focus:outline-none focus:border-b-[1px] focus:border-current w-full p-2"
+              />
+            </div>
 
+            {/* Company Name */}
+            <div className="mb-4">
+              <div className="flex items-center mb-2">
+                <span className="mr-2 text-lg sm:text-2xl">*</span>
+                <h1 className="text-lg sm:text-2xl">What is your company name?</h1>
+              </div>
+              <input
+                type="text"
+                name="CName"
+                placeholder="Company Name"
+                className="bg-transparent  text-lg sm:text-2xl focus:outline-none focus:border-b-[1px] focus:border-current w-full p-2"
+              />
+            </div>
+
+            {/* Phone Number */}
+            <div className="mb-4">
+              <div className="flex items-center mb-2">
+                <span className="mr-2 text-lg sm:text-2xl">*</span>
+                <h1 className="text-lg sm:text-2xl">What is your phone number?</h1>
+              </div>
+              <input
+                type="tel"
+                required
+                name="Tel"
+                placeholder="Phone Number"
+                className="bg-transparent  text-lg sm:text-2xl
+                focus:outline-none focus:border-b-[1px] focus:border-current w-full p-2"
+              />
+            </div>
+
+            {/* Email */}
+            <div className="mb-4">
+              <div className="flex items-center mb-2">
+                <span className="mr-2 text-lg sm:text-2xl">*</span>
+                <h1 className="text-lg sm:text-2xl">What is your email address?</h1>
+              </div>
+              <input
+                type="email"
+                required
+                name="Email"
+                placeholder="Email"
+                className="bg-transparent  text-lg sm:text-2xl focus:outline-none focus:border-b-[1px] focus:border-current w-full p-2"
+              />
+            </div>
+
+            {/* Message */}
+            <div className="mb-4">
+              <div className="flex items-center mb-2">
+                <span className="mr-2 text-lg sm:text-2xl">*</span>
+                <h1 className="text-lg sm:text-2xl">What is your message?</h1>
+              </div>
+              <textarea
+                placeholder="Message"
+                required
+                name="Message"
+                className="bg-transparent  text-lg sm:text-2xl focus:outline-none focus:border-b-[1px] focus:border-current w-full p-2"
+                rows="4"
+              ></textarea>
             </div>
 
             <button
               type="submit"
-              className="p-2 w-80 lg:w-96 mt-4 h-10 rounded-lg bg-black text-white mb-4 lg:ml-20"
+              className="bg-[#455CE9] hover:bg-[#455be9d6] text-white font-semibold py-2 px-4 rounded-full transition duration-300 ease-in-out"
             >
-              Send Message
+              Submit
             </button>
           </form>
-          <div className="mt-2">
-            <Image src={'/qrcode.jpg'} height={420} width={420} alt="QR CODE" />
+        </motion.div>
+
+        <div className="flex flex-col gap-6 mb-6 text-center lg:text-left lg:mb-0">
+          <h3 className="mb-2 font-bold "></h3>
+
+          <MagneticFramer>
+            <p className="text-xl">Phone: +923052108020</p>
+          </MagneticFramer>
+          <MagneticFramer>
+            <p className="text-xl">Email: adamjeecomputers@live.com</p>
+          </MagneticFramer>
+          <MagneticFramer>
+            <p className="text-xl">Address: Karachi , Pakistan</p>
+          </MagneticFramer>
+
+          {/* Social Media Icons */}
+          <div className="flex justify-center gap-2 mt-4">
+            <MagneticFramer>
+              <Link href={"https://mail.google.com/mail/u/0/?to=adamjeecomputers@live.com&su=Your+Subject&body=Your+Message&fs=1&tf=cm"} className="mr-4 text-2xl ">
+                <div className='hidden'>Email</div>
+                <FaMailBulk />
+              </Link>
+            </MagneticFramer>
+            <MagneticFramer>
+              <Link  href="https://api.whatsapp.com/send/?phone=%2B923052108020&text&type=phone_number&app_absent=0" className="mr-4 text-2xl ">
+                <div className='hidden'>Whatsapp</div>
+                <FaWhatsapp />
+              </Link>
+            </MagneticFramer>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
-
-export default Contact
+export default Contact;
